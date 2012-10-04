@@ -41,72 +41,74 @@
 			<div class="slides">
         <section>
           <h1>ZFS API - Work In Progress</h1>
-          <h2>Christoper Webber<br />Systems Engineer<br /><a href="http://twitter.com/cwebber">@cwebber</a></h2>
+          <h3>Christoper Webber</h3>
+          <h3>Systems Engineer</h3>
+          <h3>a href="http://twitter.com/cwebber">@cwebber</a></h3>
         </section>
 
         <section>
           <h2>Why an API?</h2>
           <ul>
-            <li>Remote execution of zfs commands</li>
-            <li>Better privilege containment</li>
-            <li>More generalized interface</li>
-            <li>Central orchestration</li>
+            <li class="fragment">Remote execution of zfs commands</li>
+            <li class="fragment">Better privilege containment</li>
+            <li class="fragment">More generalized interface</li>
+            <li class="fragment">Central orchestration</li>
           </ul>
         </section>
 
         <section>
           <h2>Why Not SSH?</h2>
           <ul>
-            <li>Harder to do right from a web interface</li>
-            <li>Doesn't create easy to parse data by default</li>
-            <li>Less repeated code</li>
+            <li class="fragment">Harder to do right from a web interface</li>
+            <li class="fragment">Doesn't create easy to parse data by default</li>
+            <li class="fragment">Less repeated code</li>
           </ul>
         </section>
 
         <section>
           <h2>Decision Points</h2>
           <ul>
-            <li>RESTful interface</li>
-            <li>Language/Framework</li>
-            <li>Authetication</li>
-            <li>Features to implement</li>
-            <li>Passing the filesystem</li>
+            <li class="fragment">RESTful interface</li>
+            <li class="fragment">Language/Framework</li>
+            <li class="fragment">Authetication</li>
+            <li class="fragment">Features to implement</li>
+            <li class="fragment">Passing the filesystem</li>
           </ul>
         </section>
 
         <section>
           <h2>Current Feature Set</h2>
           <ul>
-            <li>Get info about ZFS filesystem</li>
-            <li>Create ZFS filesystem</li>
-            <li>Change Ownership</li>
-            <li>Change Options</li>
-            <li>Delete Filesystem</li>
+            <li class="fragment">Get info about ZFS filesystem</li>
+            <li class="fragment">Create ZFS filesystem</li>
+            <li class="fragment">Change Ownership</li>
+            <li class="fragment">Change Options</li>
+            <li class="fragment">Delete Filesystem</li>
           </ul>
         </section>
 
         <section>
           <h2>Security Considerations</h2>
           <ul>
-            <li>RW and RO keys</li>
-            <li>Explicit pool permissions</li>
-            <li>Explicit option permissions</li>
+            <li class="fragment">RW and RO keys</li>
+            <li class="fragment">Explicit pool permissions</li>
+            <li class="fragment">Explicit option permissions</li>
           </ul>
         </section>
 
         <section>
           <h2>Road Ahead</h2>
           <ul>
-            <li>Move key and permissions to config file</li>
-            <li>Input verification</li>
-            <li>Change mode on root of filesystem</li>
+            <li class="fragment">Move key and permissions to config file</li>
+            <li class="fragment">Input verification</li>
+            <li class="fragment">Change mode on root of filesystem</li>
           </ul>
         </section>
 
         <section>
           <h1>Questions?</h1>
-          <h3>Slides: <a href="http://cwebberops.github.com/zfs-api-preso">http://cwebberops.github.com/zfs-api-preso</a><h3>
-          <h3>Repo: <a href="https://github.com/cwebberOps/zfs-api">https://github.com/cwebberOps/zfs-api</a><h3>
+          <h3>Slides:<br /><a href="http://cwebberops.github.com/zfs-api-preso">http://cwebberops.github.com/zfs-api-preso</a><h3>
+              <h3>Repo:<br /><a href="https://github.com/cwebberOps/zfs-api">https://github.com/cwebberOps/zfs-api</a><h3>
         </section>
 
 
@@ -139,7 +141,7 @@
 				history: true,
 				
 				theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+				transition: 'cube', // default/cube/page/concave/linear(2d)
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
